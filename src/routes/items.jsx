@@ -9,4 +9,12 @@ function ItemsLayout() {
   );
 }
 
+export async function loader() {
+  return { stuff: "stuff" };
+}
+
+export async function action() {
+  return { stuff: "stuff" };
+}
+
 export default ItemsLayout;

@@ -1,7 +1,14 @@
-import React from "react";
+import { useParams, Outlet } from "react-router-dom";
 
 function ItemIdPage() {
-  return <div>ItemIdPage</div>;
+  const { itemId } = useParams();
+
+  return (
+    <>
+      <div>ItemIdPage: {itemId}</div>
+      <Outlet />
+    </>
+  );
 }
 
 export default ItemIdPage;
